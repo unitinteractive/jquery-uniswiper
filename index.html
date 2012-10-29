@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>jQuery UniSwiper</title>
+		
+		<link rel="stylesheet" href="./base.css" />
+		
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<ul class="list">
+				<li><img src="http://placekitten.com/600/800" alt="" /></li>
+				<li><img src="http://placekitten.com/500/800" alt="" /></li>
+				<li><img src="http://placekitten.com/400/800" alt="" /></li>
+				<li><img src="http://placekitten.com/300/800" alt="" /></li>
+				<li><img src="http://placekitten.com/200/800" alt="" /></li>
+				<li><img src="http://placekitten.com/700/800" alt="" /></li>
+				<li><img src="http://placekitten.com/800/800" alt="" /></li>
+				<li><img src="http://placekitten.com/900/800" alt="" /></li>
+			</ul>
+
+			<p>
+				<a href="#prev" class="prev">&larr; prev</a>
+				<a href="#next" class="next">next &rarr;</a>
+			</p>
+		</div>
+
+		<div class="container">
+
+			<div class="list">
+				
+				<div style="width: 500px; height: 500px; background: #0f0;">
+					
+					<p>
+						This is a set of nested divs.
+					</p>
+				</div>
+
+				<div style="width: 400px; height: 300px; background: #f0f;">
+					
+					<p>
+						This is a set of nested divs.
+					</p>
+				</div>
+
+				<div style="width: 200px; height: 400px; background: #ff0;">
+					
+					<p>
+						This is a set of nested divs.
+					</p>
+				</div>
+
+				<div style="width: 500px; height: 500px; background: #00f;">
+					
+					<p>
+						This is a set of nested divs.
+					</p>
+				</div>
+			</div>
+
+			<p>
+				<a href="#prev" class="prev">&larr; prev</a>
+				<a href="#next" class="next">next &rarr;</a>
+			</p>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="./jquery.touchSwipe.js"></script>
+		<script src="./jquery.uniswiper.js"></script>
+
+		<script>
+			$( document ).ready( function()
+				{
+					$( '.container' ).uniswiper(
+						{
+							list : '.list',
+							prev : '.prev',
+							next : '.next',
+						}
+					);
+				}
+			);
+		</script>
+	</body>
+</html>
